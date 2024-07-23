@@ -1,0 +1,25 @@
+curl -X POST http://localhost:5000/register -H "Content-Type: application/json" -d '{"username": "guifl", "password": "1234"}'
+curl -X POST http://localhost:5000/login -H "Content-Type: application/json" -d '{"username": "guifl", "password": "1234"}'
+curl -X POST http://localhost:5000/upload \
+    -H "Content-Type: multipart/form-data" \
+    -H "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3MjE4NjE0MjV9.QEjDkbnuDmEzONi6nBjg3esRdWDkEzJS3necnLqsjng" \
+    -F "file=@/Users/guiflam/Desktop/cover.jpg" \
+    -F "video_link=https://www.youtube.com/watch?v=S89JMgNMb0w" \
+    -F "title=Talk Too Much" \
+    -F "artist=Juice WRLD" \
+    -F "genre=Rap"
+curl -X DELETE http://localhost:5000/delete_song \
+    -H "Content-Type: application/json" \
+    -H "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3MjE4NjE0MjV9.QEjDkbnuDmEzONi6nBjg3esRdWDkEzJS3necnLqsjng" \
+    -d '{"filename": "Talk Too Much.mp3"}'
+curl -X GET http://localhost:5000/list_songs \
+    -H "Content-Type: application/json" \
+    -H "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3MjE4NjE0MjV9.QEjDkbnuDmEzONi6nBjg3esRdWDkEzJS3necnLqsjng"
+curl -X GET http://localhost:5000/download_song \
+    -H "Content-Type: application/json" \
+    -H "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3MjE4NjE0MjV9.QEjDkbnuDmEzONi6nBjg3esRdWDkEzJS3necnLqsjng" \
+    -G \
+    --data-urlencode "filename=Talk Too Much.mp3"
+curl -X GET "http://localhost:5000/get_song/Talk%20Too%20Much.mp3" \
+    -H "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3MjE4NjE0MjV9.QEjDkbnuDmEzONi6nBjg3esRdWDkEzJS3necnLqsjng" \
+    --output ~/Desktop/Talk\ Too\ Much.mp3

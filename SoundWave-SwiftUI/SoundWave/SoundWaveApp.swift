@@ -10,9 +10,11 @@ import SwiftUI
 @main
 struct SoundWaveApp: App {
     
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

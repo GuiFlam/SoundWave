@@ -13,6 +13,8 @@
 		95556FED2C4F2CA1006803A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95556FEC2C4F2CA1006803A1 /* Assets.xcassets */; };
 		95556FF02C4F2CA1006803A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95556FEF2C4F2CA1006803A1 /* Preview Assets.xcassets */; };
 		95556FF72C4F3083006803A1 /* DocumentPIcker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95556FF62C4F3083006803A1 /* DocumentPIcker.swift */; };
+		95DDD16D2C5074C100E2C654 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DDD16C2C5074C100E2C654 /* MainView.swift */; };
+		95DDD16F2C50756500E2C654 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DDD16E2C50756500E2C654 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		95556FEF2C4F2CA1006803A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95556FF62C4F3083006803A1 /* DocumentPIcker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPIcker.swift; sourceTree = "<group>"; };
 		95556FF82C4F3195006803A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		95DDD16C2C5074C100E2C654 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		95DDD16E2C50756500E2C654 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				95556FF82C4F3195006803A1 /* Info.plist */,
+				95DDD16C2C5074C100E2C654 /* MainView.swift */,
 				95556FE82C4F2C9F006803A1 /* SoundWaveApp.swift */,
 				95556FEA2C4F2C9F006803A1 /* ContentView.swift */,
 				95556FEC2C4F2CA1006803A1 /* Assets.xcassets */,
 				95556FEE2C4F2CA1006803A1 /* Preview Content */,
 				95556FF62C4F3083006803A1 /* DocumentPIcker.swift */,
 				9552CED92C4F4E8D0094457B /* PlayerView.swift */,
+				95DDD16E2C50756500E2C654 /* User.swift */,
 			);
 			path = SoundWave;
 			sourceTree = "<group>";
@@ -147,7 +153,9 @@
 			files = (
 				95556FF72C4F3083006803A1 /* DocumentPIcker.swift in Sources */,
 				95556FEB2C4F2C9F006803A1 /* ContentView.swift in Sources */,
+				95DDD16F2C50756500E2C654 /* User.swift in Sources */,
 				95556FE92C4F2C9F006803A1 /* SoundWaveApp.swift in Sources */,
+				95DDD16D2C5074C100E2C654 /* MainView.swift in Sources */,
 				9552CEDA2C4F4E8D0094457B /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
